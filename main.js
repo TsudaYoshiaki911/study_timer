@@ -95,16 +95,16 @@ function recommend_setting(){
     waveform.value = 'sine';
     hours_study_slider.value = 0;
     hours_study_number.value = 0;
-    minutes_study_slider.value = 12;
-    minutes_study_number.value = 12;
-    seconds_study_slider.value = 30;
-    seconds_study_number.value = 30;
+    minutes_study_slider.value = 25;
+    minutes_study_number.value = 25;
+    seconds_study_slider.value = 0;
+    seconds_study_number.value = 0;
     hours_rest_slider.value = 0;
     hours_rest_number.value = 0;
-    minutes_rest_slider.value = 2;
-    minutes_rest_number.value = 2;
-    seconds_rest_slider.value = 30;
-    seconds_rest_number.value = 30;
+    minutes_rest_slider.value = 5;
+    minutes_rest_number.value = 5;
+    seconds_rest_slider.value = 0;
+    seconds_rest_number.value = 0;
 }
 
 function change_slider(e){
