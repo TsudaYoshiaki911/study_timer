@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <meta charset="utf-8" lang="ja">
+        <link href="main.css" rel="stylesheet" type="text/css" media="all">
+    </head>
+    <body>
+        <table>
+            <tr><th><p id="time_display">00:00:00</div></th></tr>
+            <tr><td>
+                <strong>総勉強時間</strong>
+                <div id="total_time">0:00:00</div>
+            </td></tr>
+            <tr><td>
+                <button class="timer_button" id="start_stop" onclick="timer_start()">スタート</button>
+                <button class="timer_button" id="set" onclick="timer_set()">セット</button>
+                <button id="total_reset" onclick="total_reset()">総勉強時間をリセット</button>
+            </td></tr>
+            <tr><td>
+                <strong>ピー音の設定</strong>
+                <div>
+                    周波数（Hz）：
+                    <input type="number" class="number" id="frequency_number" min="0" max="20000" value="440">
+                    <input type="range"  class="slider" id="frequency_slider" min="0" max="20000" step="10" value="440">
+                </div>
+                <div>
+                    音量（%）：
+                    <input type="number" class="number" id="volume_number" min="0" max="100" value="50">
+                    <input type="range"  class="slider" id="volume_slider" min="0" max="100" step="1" value="50">
+                </div>
+                <div>
+                    波形：
+                    <select id="waveform">
+                        <option value="sine">正弦波</option>
+                        <option value="square">方形波</option>
+                        <option value="sawtooth">ノコギリ波</option>
+                        <option value="triangle">三角波</option>
+                    </select>
+                </div>
+            </td></tr>
+            <tr><td>
+                <strong>勉強時間</strong>
+                <div>
+                    時：
+                    <input type="number" class="number" id="hours_study_number" min="0" max="23" value="0">
+                    <input type="range" class="slider" id="hours_study_slider" min="0" max="23" step="1" value="0">
+                </div>
+                <div>
+                    分：
+                    <input type="number" class="number" id="minutes_study_number" min="0" max="59" value="0">
+                    <input type="range" class="slider" id="minutes_study_slider" min="0" max="59" step="1" value="0">
+                </div>
+                <div>
+                    秒：
+                    <input type="number" class="number" id="seconds_study_number" min="0" max="59" value="0">
+                    <input type="range" class="slider" id="seconds_study_slider" min="0" max="59" step="1" value="0">
+                </div>
+            </td></tr>
+            <tr><td>
+                <strong>休憩時間</strong>
+                <div>
+                    時：
+                    <input type="number" class="number" id="hours_rest_number" min="0" max="23" value="0">
+                    <input type="range" class="slider" id="hours_rest_slider" min="0" max="23" step="1" value="0">
+                </div>
+                <div>
+                    分：
+                    <input type="number" class="number" id="minutes_rest_number" min="0" max="59" value="0">
+                    <input type="range" class="slider" id="minutes_rest_slider" min="0" max="59" step="1" value="0">
+                </div>
+                <div>
+                    秒：
+                    <input type="number" class="number" id="seconds_rest_number" min="0" max="59" value="0">
+                    <input type="range" class="slider" id="seconds_rest_slider" min="0" max="59" step="1" value="0">
+                </div>
+            </td></tr>
+            <tr><td>
+                <div>
+                    <button id="recommend_setting" onclick="recommend_setting()">オススメ設定</button>
+                </div>
+            </td></tr>
+        </table>
+    </body>
+    <script src="main.js"></script>
+</html>
